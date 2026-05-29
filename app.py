@@ -23,7 +23,7 @@ HEADERS = {
 # ======================================================
 
 st.set_page_config(
-    page_title="Fonozis",
+    page_title="Jam",
     page_icon="🎸",
     layout="centered"
 )
@@ -34,7 +34,7 @@ st.set_page_config(
 
 if "usuario" not in st.session_state:
 
-    st.title("🎸 Fonozis")
+    st.title("🎸 Jam")
 
     nombre = st.selectbox(
         "¿Quién eres?",
