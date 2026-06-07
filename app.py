@@ -290,6 +290,8 @@ with tab3:
 
             with st.expander(f"🎵 {nombre_archivo}"):
 
+                st.write(file_url)
+
                 st.audio(
                     file_url,
                     format="audio/mp4"
