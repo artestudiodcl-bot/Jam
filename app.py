@@ -354,7 +354,10 @@ with tab4:
     )
 
     if response.status_code == 200:
+st.write(response.status_code)
 
+if response.status_code == 200:
+    st.write(response.json())
         fechas = sorted(
             response.json(),
             key=lambda x: x["name"],
