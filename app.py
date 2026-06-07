@@ -256,6 +256,17 @@ with tab2:
 
 with tab3:
 
+response = requests.post(
+    f"{BASE_URL}/storage/v1/object/list/audios",
+    headers=HEADERS,
+    json={"prefix": ""}
+)
+
+st.write("Status:", response.status_code)
+
+if response.status_code == 200:
+    st.write(response.json())
+    
     st.subheader("🎧 Ideas de la banda")
 
     if st.button("🔄 Actualizar"):
